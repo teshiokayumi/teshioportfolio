@@ -64,6 +64,43 @@ header {
   margin-bottom: 10px;
 }
 
+.certification-badges {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: linear-gradient(135deg, #ffffff 0%, #fef3f3 100%);
+  color: #b36e6c;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(179, 110, 108, 0.15);
+  border: 2px solid #F5C3C2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge::before {
+  content: '★';
+  font-size: 0.8rem;
+  color: #ff9d00;
+}
+
+.badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(179, 110, 108, 0.25);
+  background: white;
+}
+
 h1 {
   font-family: var(--font-serif);
   margin: 0;
