@@ -100,6 +100,9 @@ header {
   box-shadow: 0 6px 20px rgba(179, 110, 108, 0.25);
   background: white;
 }
+.badge {
+  pointer-events: auto !important; /* クリックを有効化 */
+}
 
 h1 {
   font-family: var(--font-serif);
