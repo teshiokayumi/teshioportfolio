@@ -100,8 +100,24 @@ header {
   box-shadow: 0 6px 20px rgba(179, 110, 108, 0.25);
   background: white;
 }
+
+/* 既存の .badge クラスに text-decoration: none; を追加 */
 .badge {
-  pointer-events: auto !important; /* クリックを有効化 */
+  background: linear-gradient(135deg, #ffffff 0%, #fef3f3 100%);
+  color: #b36e6c;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(179, 110, 108, 0.15);
+  border: 2px solid #F5C3C2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* ← これを追加（リンクの下線を消す） */
 }
 
 h1 {
