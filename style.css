@@ -449,6 +449,50 @@ li a:hover {
   color: #b36e6c;
 }
 
+
+.exp-card.exp-card-wide {
+  grid-column: 1 / -1;
+}
+
+.experience-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.experience-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(179, 110, 108, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.experience-list li:last-child {
+  border-bottom: none;
+}
+
+.experience-list .date {
+  font-weight: 700;
+  color: #b36e6c;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.experience-list .title {
+  font-weight: 600;
+  color: var(--text-color);
+  flex: 1 1 auto;
+}
+
+.experience-list .organizer {
+  color: #666;
+  font-size: 0.88rem;
+}
+
 .exp-card ul {
   margin: 0;
   padding-left: 18px;
